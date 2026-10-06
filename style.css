@@ -1,0 +1,322 @@
+/* =========================
+   RESET
+========================= */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background: #ffffff;
+    color: #171717;
+    line-height: 1.6;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+
+/* =========================
+   MAIN CONTAINER
+========================= */
+
+main,
+nav,
+footer {
+    max-width: 1000px;
+    margin: auto;
+}
+
+main {
+    width: 90%;
+}
+
+
+/* =========================
+   NAVIGATION
+========================= */
+
+header {
+    border-bottom: 1px solid #e5e5e5;
+    position: sticky;
+    top: 0;
+    background: rgba(255, 255, 255, 0.96);
+    z-index: 1000;
+}
+
+nav {
+    width: 90%;
+    height: 65px;
+
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+
+    gap: 28px;
+}
+
+nav a {
+    font-size: 14px;
+    color: #555;
+    transition: 0.2s;
+}
+
+nav a:hover {
+    color: #000;
+}
+
+
+/* =========================
+   SECTIONS
+========================= */
+
+section {
+    padding: 90px 0;
+    border-bottom: 1px solid #eeeeee;
+}
+
+section h2 {
+    font-size: 30px;
+    margin-bottom: 30px;
+    letter-spacing: -0.5px;
+}
+
+
+/* =========================
+   HERO
+========================= */
+
+#hero {
+    min-height: 85vh;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    border-bottom: none;
+}
+
+#hero h1 {
+    font-size: clamp(45px, 8vw, 75px);
+    line-height: 1.05;
+    letter-spacing: -3px;
+    margin-bottom: 15px;
+}
+
+#hero h2 {
+    font-size: 25px;
+    font-weight: 400;
+    color: #555;
+    margin-bottom: 25px;
+}
+
+#hero p {
+    max-width: 650px;
+    font-size: 18px;
+    color: #555;
+    margin-bottom: 30px;
+}
+
+
+/* =========================
+   BUTTONS / LINKS
+========================= */
+
+#hero div {
+    display: flex;
+    gap: 12px;
+    flex-wrap: wrap;
+}
+
+#hero a {
+    display: inline-block;
+    padding: 10px 18px;
+
+    border: 1px solid #222;
+    border-radius: 5px;
+
+    font-size: 14px;
+
+    transition: 0.2s;
+}
+
+#hero a:hover {
+    background: #171717;
+    color: #ffffff;
+}
+
+
+/* =========================
+   ABOUT
+========================= */
+
+#about p {
+    max-width: 750px;
+    color: #555;
+    font-size: 17px;
+    margin-bottom: 18px;
+}
+
+
+/* =========================
+   PROJECTS
+========================= */
+
+article {
+    max-width: 800px;
+    padding: 30px 0;
+
+    border-bottom: 1px solid #eeeeee;
+}
+
+article:first-child {
+    padding-top: 0;
+}
+
+article:last-child {
+    border-bottom: none;
+}
+
+article h3 {
+    font-size: 22px;
+    margin-bottom: 8px;
+}
+
+article p {
+    max-width: 750px;
+    color: #555;
+    margin-bottom: 12px;
+}
+
+article a {
+    font-size: 14px;
+    font-weight: 600;
+}
+
+article a:hover {
+    text-decoration: underline;
+}
+
+
+/* =========================
+   SKILLS
+========================= */
+
+#skills p {
+    max-width: 800px;
+    margin-bottom: 14px;
+    color: #555;
+}
+
+#skills strong {
+    color: #171717;
+}
+
+
+/* =========================
+   EXPERIENCE
+========================= */
+
+#experience h3 {
+    font-size: 22px;
+    margin-bottom: 5px;
+}
+
+#experience > p {
+    color: #666;
+    margin-bottom: 20px;
+}
+
+#experience ul {
+    max-width: 800px;
+    padding-left: 20px;
+    color: #555;
+}
+
+#experience li {
+    margin-bottom: 10px;
+}
+
+
+/* =========================
+   CONTACT
+========================= */
+
+#contact p {
+    color: #555;
+    margin-bottom: 20px;
+}
+
+#contact a {
+    font-size: 20px;
+    font-weight: 600;
+}
+
+#contact a:hover {
+    text-decoration: underline;
+}
+
+
+/* =========================
+   FOOTER
+========================= */
+
+footer {
+    width: 90%;
+    padding: 30px 0;
+
+    color: #777;
+    font-size: 13px;
+}
+
+
+/* =========================
+   MOBILE
+========================= */
+
+@media (max-width: 700px) {
+
+    nav {
+        justify-content: center;
+        gap: 15px;
+        overflow-x: auto;
+    }
+
+    nav a {
+        font-size: 12px;
+        white-space: nowrap;
+    }
+
+    #hero {
+        min-height: 75vh;
+    }
+
+    #hero h1 {
+        font-size: 48px;
+    }
+
+    #hero h2 {
+        font-size: 21px;
+    }
+
+    #hero p {
+        font-size: 16px;
+    }
+
+    section {
+        padding: 65px 0;
+    }
+
+    section h2 {
+        font-size: 27px;
+    }
+}
